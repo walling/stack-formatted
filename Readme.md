@@ -18,6 +18,12 @@ console.log(new Error().stackFormatted);
 // All error objects contain the stackFormatted property.
 ```
 
+Example output:
+
+![Example of stack-formatted stack trace in the terminal.][example-image]
+
+----
+
 We use [stack-json] to produce the nicely formatted output. You can also use [trace] to get long stack trace in asynchronous code (mainly for debugging):
 
 ```javascript
@@ -36,3 +42,4 @@ setTimeout(function() {
 
 [stack-json]: https://github.com/walling/stack-json
 [trace]: https://github.com/AndreasMadsen/trace
+[example-image]: https://raw.github.com/walling/stack-formatted/master/example.png
